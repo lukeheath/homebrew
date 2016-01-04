@@ -23,8 +23,7 @@ class Mlt < Formula
   def install
     args = ["--prefix=#{prefix}",
             "--disable-jackrack",
-            "--disable-swfdec",
-            "--disable-gtk"]
+            "--disable-swfdec"]
 
     system "./configure", *args
 
